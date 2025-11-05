@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* アメリカンダイナーカラー */
+  --diner-red: #DC143C;
+  --diner-cream: #FFF8DC;
+  --diner-brown: #8B4513;
+  --diner-yellow: #FFD700;
+  --diner-black: #1a1a1a;
+  --diner-gray: #4a4a4a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* スムーススクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--diner-red);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91028;
+}
